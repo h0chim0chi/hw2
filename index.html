@@ -3,27 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Jesse's Patisserie</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+ </head>
    
 <body>
-    <h1> Jesse's Bakery </h1>
-    <p>
-        <strong>Artisinal Patisserie and Fresh Baked Bread</strong> 
-        <p><img src="https://media-cdn.tripadvisor.com/media/photo-s/13/9e/35/85/photo1jpg.jpg"></p>
-    <h1>Hours:</h1>
-        <li>Monday-Friday 7 AM - 6 PM</li> 
-        <li>Saturday/Sunday 8:30 AM - 4 PM</li> 
-    </p>
+    <!--First section introducing page-->
+    <div class="text-center">
+        <h1 class="text-3xl font-bold">
+            <a href="index.html">
+              <span class="text-blue-700">Welcome to Jesse's Patisserie</span>
+            </a>
+        </h1>
+    </div>
+    <div>
+        <p class="text-center"
+            <strong>Artisinal Patisserie and Fresh Baked Bread</strong> 
+        </p>
+    </div>
+    <!-- link to products page-->
+    <div class="mt-16 md:flex md:space-x-4">
+        <div class="md:w-3/6">
+            <div class="space-y-4 md:mt-0 mt-8">
+                <h2 class="font-bold">Daily Baked Goods</h2>
+                    <div>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/9e/35/85/photo1jpg.jpg">
+                    </div>
+                    <div> 
+                        <span class="text-blue-300">Click <a href="products.html"> for list of our delicious treats and specials </a></span>
+                    </div>
+                </div>
+        </div>
+        <div>
+            <!-- link to locations page-->
+        <div class="md:w-3/6">
+            <div class="space-y-4 md:mt-0 mt-8">
+                <h2 class="font-bold">Store Locations & Hours</h2>
+                    <div>
+                        <img src="https://static01.nyt.com/images/2019/12/02/autossell/mta-promo-image/mta-promo-image-superJumbo.jpg">
+                    </div>
+                    <div>
+                        <span class=text-blue-300> Click <a href="location.html"> for our store locations</a></span>
+                    </div>
+                 <div><h1>Hours:</h1>
+                    <li>Monday-Friday 7 AM - 6 PM</li> 
+                    <li>Saturday/Sunday 8:30 AM - 4 PM</li> 
+                </div>
+            </div>
+        </div>
+        <h1 class="my-16 font-bold text-3xl text-left">Ready to order and join our community?</h1>
+        <form netlify>
+        <label class="block mt-4 font-bold" for="name">Enter Your First and Last Name</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="text" id="name" name="name">
 
-    <!-- Link to page2-->
-    <p>
-        See <a href="page2.html"> for list of our delicious treats and specials </a>
-    </p>  
+        <label class="block mt-4 font-bold" for="email">Enter Your E-mail</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="text" id="email" name="email">
 
-    <!-- Link to page3-->
-    <p>
-        See <a href="page3.html"> for our store locations</a>
-    </p>
+        <label class="block mt-4 font-bold" for="email">Would you like to join our weekly newsletter (Y/N)? </label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="text" id="email" name="email">
+        
+        <label class="block mt-4 font-bold" for="order">Please enter the product and quantity in the box below</label>
+        <textarea rows="6" class="p-2 w-full border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" id="order" name="order"></textarea>
+        
+        <button class="block mt-4 text-white bg-purple-500 rounded px-4 py-2">Submit Order</button>
+        </form>
+    </div>
 </body>
 </html>
